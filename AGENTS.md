@@ -8,8 +8,11 @@
 - [x] Transaction history screen
 - [x] Analytics dashboard
 - [x] Market overview page
-- [ ] Market overview page
-- [ ] Token info/search integration
+- [x] Token info/search integration
+- [ ] Real analytics data wiring
+| Token lookup | Completed |
+- `useSolanaBalance()` in `src/hooks/useSolanaBalance.ts` and `getWsolBalance()` from `src/lib/solana.ts` provide wallet balances for Dashboard.
+- Analytics currently uses mock data in `src/pages/Analytics.tsx`; needs real stats connection.
 - [ ] Wallet integration polish
 
 ## Feature Status
