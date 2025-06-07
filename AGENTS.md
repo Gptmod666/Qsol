@@ -8,6 +8,7 @@
 - [x] Transaction history screen
 - [x] Analytics dashboard
 - [x] Market overview page
+- [ ] Market overview page
 - [ ] Token info/search integration
 - [ ] Wallet integration polish
 
@@ -21,6 +22,8 @@
 | Analytics charts | Completed |
 | Market data view | Completed |
 | Token lookup | In Progress |
+| Market data view | In Progress |
+| Token lookup | Planned |
 | Settings panel | Completed |
 
 ## Current Issues / Blockers
