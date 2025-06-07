@@ -1,55 +1,35 @@
-# Frontend Development Progress
+# Frontend Progress Tracker
 
 ## Checklist
-
 - [x] Base React + Tailwind setup
-- [x] Core navigation layout
+- [x] Navigation layout
+- [x] Wallet connection components
 - [x] Sniper configuration UI
-- [x] Transaction history screen
-- [x] Analytics dashboard
-- [x] Market overview page
-- [x] Token info/search integration
-- [x] Wallet integration polish
+- [x] Transaction history display
+- [x] Market overview using `useMarketData`
+- [x] Token search integration
+- [x] Settings panel
 - [ ] Real analytics data wiring
-- [ ] Wallet integration polish
-- [ ] Real analytics data wiring
-- [ ] Market overview page
-- [ ] Token info/search integration
-- [ ] Wallet integration polish
-
+- [ ] Error handling polish
+- [ ] Live market API fallback
 
 ## Feature Status
-
 | Feature | Status |
 | --- | --- |
-| Dashboard with balances | Completed |
-| Sniper configuration | Completed |
-| Transactions log | Completed |
-| Analytics charts | Completed |
-| Market data view | Completed |
-| Token lookup | Completed |
+| Dashboard with wallet info | In Progress |
+| Sniper configuration | Working |
+| Transactions log | Working |
+| Market data view | Working (API cached) |
+| Analytics graphs | Mock data |
+| Settings & theme | Working |
 
-| Token lookup | In Progress |
-| Market data view | In Progress |
-| Token lookup | Planned |
+## Bugs / Blockers
+- Market and analytics use mock or cached data when API fails
+- No backend endpoints for real trading stats
+- Linting may fail if dependencies are missing
 
-| Settings panel | Completed |
-
-## Current Issues / Blockers
-
-- No live API endpoints for tokenService yet, using mock data.
-- Linting fails in environments without dependencies installed.
-
-- Redux store unified with wallet slice for balance tracking.
-
-
-## API / Function Notes
-
-- `getTokenInfo(address)` in `src/lib/tokenService.ts` should feed a token detail component.
-- `useMarketData()` from `src/lib/marketData.ts` powers the market overview page.
-- `startSnipe(config)` from `src/lib/sniperService.ts` is triggered from SniperConfig page.
-- Transaction management via `src/lib/transactionStore.ts` already wired to Transactions page.
-- `useSolanaBalance()` in `src/hooks/useSolanaBalance.ts` and `getWsolBalance()` from `src/lib/solana.ts` provide wallet balances for Dashboard.
-- Balances are dispatched to Redux from `WalletDetails` for use across the app.
-- Analytics currently uses mock data in `src/pages/Analytics.tsx`; needs real stats connection.
-- Analytics currently uses mock data in `src/pages/Analytics.tsx`; needs real stats connection.
+## Notes
+- `useSolanaBalance` + `getWsolBalance` fetch wallet balances
+- `sniperService.startSnipe` triggers mock trades and stores them via `transactionStore`
+- Transactions persist in `localStorage`
+- Real analytics still needs data connection and should replace the mock in `Analytics.tsx`
