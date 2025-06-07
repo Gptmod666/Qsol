@@ -40,12 +40,14 @@ const router = createBrowserRouter([
     </Layout>,
   },
   {
+
     path: '/tokens',
     element: <Layout>
       <TokenSearch />
     </Layout>,
   },
   {
+
     path: '/settings',
     element: <Layout>
       <Settings />

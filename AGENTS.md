@@ -11,6 +11,12 @@
 - [x] Token info/search integration
 - [x] Wallet integration polish
 - [ ] Real analytics data wiring
+- [ ] Wallet integration polish
+- [ ] Real analytics data wiring
+- [ ] Market overview page
+- [ ] Token info/search integration
+- [ ] Wallet integration polish
+
 
 ## Feature Status
 
@@ -22,13 +28,20 @@
 | Analytics charts | Completed |
 | Market data view | Completed |
 | Token lookup | Completed |
+
+| Token lookup | In Progress |
+| Market data view | In Progress |
+| Token lookup | Planned |
+
 | Settings panel | Completed |
 
 ## Current Issues / Blockers
 
 - No live API endpoints for tokenService yet, using mock data.
 - Linting fails in environments without dependencies installed.
+
 - Redux store unified with wallet slice for balance tracking.
+
 
 ## API / Function Notes
 
@@ -39,4 +52,4 @@
 - `useSolanaBalance()` in `src/hooks/useSolanaBalance.ts` and `getWsolBalance()` from `src/lib/solana.ts` provide wallet balances for Dashboard.
 - Balances are dispatched to Redux from `WalletDetails` for use across the app.
 - Analytics currently uses mock data in `src/pages/Analytics.tsx`; needs real stats connection.
-
+- Analytics currently uses mock data in `src/pages/Analytics.tsx`; needs real stats connection.
