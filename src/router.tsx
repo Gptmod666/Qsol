@@ -5,6 +5,8 @@ import SniperConfig from './pages/SniperConfig';
 import Transactions from './pages/Transactions';
 import Analytics from './pages/Analytics';
 import Settings from './pages/Settings';
+import Market from './pages/Market';
+import TokenSearch from './pages/TokenSearch';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,18 @@ const router = createBrowserRouter([
     path: '/analytics',
     element: <Layout>
       <Analytics />
+    </Layout>,
+  },
+  {
+    path: '/market',
+    element: <Layout>
+      <Market />
+    </Layout>,
+  },
+  {
+    path: '/tokens',
+    element: <Layout>
+      <TokenSearch />
     </Layout>,
   },
   {
