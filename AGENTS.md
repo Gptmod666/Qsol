@@ -11,6 +11,9 @@
 - [x] Token info/search integration
 - [ ] Wallet integration polish
 - [ ] Real analytics data wiring
+- [ ] Market overview page
+- [ ] Token info/search integration
+- [ ] Wallet integration polish
 
 ## Feature Status
 
@@ -22,6 +25,9 @@
 | Analytics charts | Completed |
 | Market data view | Completed |
 | Token lookup | Completed |
+| Token lookup | In Progress |
+| Market data view | In Progress |
+| Token lookup | Planned |
 | Settings panel | Completed |
 
 ## Current Issues / Blockers
@@ -37,4 +43,5 @@
 - Transaction management via `src/lib/transactionStore.ts` already wired to Transactions page.
 - `useSolanaBalance()` in `src/hooks/useSolanaBalance.ts` and `getWsolBalance()` from `src/lib/solana.ts` provide wallet balances for Dashboard.
 - Analytics currently uses mock data in `src/pages/Analytics.tsx`; needs real stats connection.
+
 

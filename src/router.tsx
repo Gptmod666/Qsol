@@ -8,6 +8,7 @@ import Settings from './pages/Settings';
 import Market from './pages/Market';
 import TokenSearch from './pages/TokenSearch';
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -40,12 +41,14 @@ const router = createBrowserRouter([
     </Layout>,
   },
   {
+
     path: '/tokens',
     element: <Layout>
       <TokenSearch />
     </Layout>,
   },
   {
+
     path: '/settings',
     element: <Layout>
       <Settings />

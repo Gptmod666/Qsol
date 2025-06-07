@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LayoutDashboard, Crosshair, History, LineChart, Activity, Search, Settings as SettingsIcon } from 'lucide-react';
+import { LayoutDashboard, Crosshair, History, LineChart, Activity, Settings as SettingsIcon } from 'lucide-react';
 import WalletConnect from './WalletConnect';
 import { ThemeToggle } from './ThemeToggle';
 
