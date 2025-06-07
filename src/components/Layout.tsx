@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Crosshair, History, LineChart, Settings as SettingsIcon } from 'lucide-react';
+import { LayoutDashboard, Crosshair, History, LineChart, Activity, Settings as SettingsIcon } from 'lucide-react';
 import WalletConnect from './WalletConnect';
 import { ThemeToggle } from './ThemeToggle';
 
@@ -15,6 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Dashboard', href: '/', icon: LayoutDashboard },
     { name: 'Sniper', href: '/sniper', icon: Crosshair },
     { name: 'Transactions', href: '/transactions', icon: History },
+    { name: 'Market', href: '/market', icon: Activity },
     { name: 'Analytics', href: '/analytics', icon: LineChart },
     { name: 'Settings', href: '/settings', icon: SettingsIcon },
   ];
