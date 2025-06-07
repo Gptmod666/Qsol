@@ -1,6 +1,7 @@
 import React from 'react';
 import { Wallet } from 'lucide-react';
 import WalletDetails from '../components/WalletDetails';
+import { WalletBalanceDisplay } from '../components/WalletBalanceDisplay';
 
 const Dashboard = () => {
   return (
@@ -13,8 +14,9 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Wallet Details */}
+      {/* Wallet Summary */}
       <div className="grid grid-cols-1 gap-6">
+        <WalletBalanceDisplay />
         <WalletDetails />
       </div>
     </main>

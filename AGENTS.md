@@ -8,6 +8,9 @@
 - [x] Transaction history screen
 - [x] Analytics dashboard
 - [x] Market overview page
+- [x] Token info/search integration
+- [ ] Wallet integration polish
+- [ ] Real analytics data wiring
 - [ ] Market overview page
 - [ ] Token info/search integration
 - [ ] Wallet integration polish
@@ -21,6 +24,7 @@
 | Transactions log | Completed |
 | Analytics charts | Completed |
 | Market data view | Completed |
+| Token lookup | Completed |
 | Token lookup | In Progress |
 | Market data view | In Progress |
 | Token lookup | Planned |
@@ -37,4 +41,7 @@
 - `useMarketData()` from `src/lib/marketData.ts` powers the market overview page.
 - `startSnipe(config)` from `src/lib/sniperService.ts` is triggered from SniperConfig page.
 - Transaction management via `src/lib/transactionStore.ts` already wired to Transactions page.
+- `useSolanaBalance()` in `src/hooks/useSolanaBalance.ts` and `getWsolBalance()` from `src/lib/solana.ts` provide wallet balances for Dashboard.
+- Analytics currently uses mock data in `src/pages/Analytics.tsx`; needs real stats connection.
+
 

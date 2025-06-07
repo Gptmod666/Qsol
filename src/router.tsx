@@ -49,7 +49,6 @@ const router = createBrowserRouter([
   },
   {
 
-
     path: '/settings',
     element: <Layout>
       <Settings />
