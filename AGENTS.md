@@ -7,7 +7,7 @@
 - [x] Sniper configuration UI
 - [x] Transaction history screen
 - [x] Analytics dashboard
-- [ ] Market overview page
+- [x] Market overview page
 - [ ] Token info/search integration
 - [ ] Wallet integration polish
 
@@ -19,8 +19,8 @@
 | Sniper configuration | Completed |
 | Transactions log | Completed |
 | Analytics charts | Completed |
-| Market data view | In Progress |
-| Token lookup | Planned |
+| Market data view | Completed |
+| Token lookup | In Progress |
 | Settings panel | Completed |
 
 ## Current Issues / Blockers
