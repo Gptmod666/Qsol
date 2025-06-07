@@ -8,7 +8,6 @@ import Settings from './pages/Settings';
 import Market from './pages/Market';
 import TokenSearch from './pages/TokenSearch';
 
-
 const router = createBrowserRouter([
   {
     path: '/',

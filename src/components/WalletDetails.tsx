@@ -4,7 +4,7 @@ import { Button } from "../components/ui/button";
 import { Wallet, Copy, RefreshCw, LogOut } from 'lucide-react';
 import { truncateAddress } from "../lib/utils";
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../store';
+import { RootState, setSolBalance, setWsolBalance } from '../store';
 import { useSolanaBalance } from '../hooks/useSolanaBalance';
 import { Connection, PublicKey } from '@solana/web3.js';
 import { getWsolBalance, SOLANA_RPC_ENDPOINT } from '../lib/solana';
@@ -71,6 +71,19 @@ export default function WalletDetails() {
       setWsolBalance(null);
     }
   }, [address, currentEndpoint]);
+
+  // Sync balances to Redux store
+  useEffect(() => {
+    if (solBalance !== null) {
+      dispatch(setSolBalance(solBalance));
+    }
+  }, [solBalance, dispatch]);
+
+  useEffect(() => {
+    if (wsolBalance !== null) {
+      dispatch(setWsolBalance(wsolBalance));
+    }
+  }, [wsolBalance, dispatch]);
   
   // Total balance (SOL + WSOL)
   const totalBalance = (() => {
